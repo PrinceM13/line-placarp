@@ -12,13 +12,13 @@ export default async function reply(replyToken: string, msg: string) {
     message: [
       {
         type: "text",
-        text: "ปลาคาร์ปมาแล้วจ้าาา!\nมาๆ เดี๋ยวน้องช่วยเก็บเงินให้",
+        text: "ปลาคาร์ปมาแล้วจ้าาา!",
         quickReply: {
           items: [
             {
               type: "action",
-              imageUrl:
-                "https://res.cloudinary.com/dhr35jlbz/image/upload/v1683191714/line/placarp/images/thai-baht_ix7g3k.png",
+              //   imageUrl:
+              //     "https://res.cloudinary.com/dhr35jlbz/image/upload/v1683191714/line/placarp/images/thai-baht_ix7g3k.png",
               action: {
                 type: "message",
                 label: "สร้างบิล",
@@ -27,8 +27,8 @@ export default async function reply(replyToken: string, msg: string) {
             },
             {
               type: "action",
-              imageUrl:
-                "https://res.cloudinary.com/dhr35jlbz/image/upload/v1683191727/line/placarp/images/more_h2rpnp.png",
+              //   imageUrl:
+              //     "https://res.cloudinary.com/dhr35jlbz/image/upload/v1683191727/line/placarp/images/more_h2rpnp.png",
               action: {
                 type: "message",
                 label: "เพิ่มเติม",
@@ -45,6 +45,41 @@ export default async function reply(replyToken: string, msg: string) {
           ]
         }
       }
+      //   {
+      //     type: "text",
+      //     text: "ปลาคาร์ปมาแล้วจ้าาา!\nมาๆ เดี๋ยวน้องช่วยเก็บเงินให้",
+      //     quickReply: {
+      //       items: [
+      //         {
+      //           type: "action",
+      //           imageUrl:
+      //             "https://res.cloudinary.com/dhr35jlbz/image/upload/v1683191714/line/placarp/images/thai-baht_ix7g3k.png",
+      //           action: {
+      //             type: "message",
+      //             label: "สร้างบิล",
+      //             text: "#สร้างบิล"
+      //           }
+      //         },
+      //         {
+      //           type: "action",
+      //           imageUrl:
+      //             "https://res.cloudinary.com/dhr35jlbz/image/upload/v1683191727/line/placarp/images/more_h2rpnp.png",
+      //           action: {
+      //             type: "message",
+      //             label: "เพิ่มเติม",
+      //             text: "#เพิ่มเติม"
+      //           }
+      //         },
+      //         {
+      //           type: "action",
+      //           action: {
+      //             type: "location",
+      //             label: "Send location"
+      //           }
+      //         }
+      //       ]
+      //     }
+      //   }
     ]
   };
   await axios.post("https://api.line.me/v2/bot/message/reply", body, config);
