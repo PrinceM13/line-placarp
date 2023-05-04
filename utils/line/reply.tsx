@@ -26,7 +26,7 @@ export default async function reply(replyToken: string, msg: string) {
               //   }
               action: {
                 type: "camera",
-                label: "เพิ่มเติม"
+                label: "สร้างบิล"
               }
             },
             {
@@ -36,6 +36,15 @@ export default async function reply(replyToken: string, msg: string) {
               action: {
                 type: "cameraRoll",
                 label: "เพิ่มเติม"
+              }
+            },
+            {
+              type: "action",
+              imageUrl:
+                "https://res.cloudinary.com/dhr35jlbz/image/upload/v1683195177/line/placarp/images/more-white_vpt5yl.png",
+              action: {
+                type: "template",
+                label: "เพิ่มเติม 2"
               }
             },
             {
