@@ -19,10 +19,14 @@ export default async function reply(replyToken: string, msg: string) {
               type: "action",
               imageUrl:
                 "https://res.cloudinary.com/dhr35jlbz/image/upload/v1683195597/line/placarp/images/thai-baht-coin-white_x9flz5.png",
+              //   action: {
+              //     type: "message",
+              //     label: "สร้างบิล",
+              //     text: "#สร้างบิล"
+              //   }
               action: {
-                type: "message",
-                label: "สร้างบิล",
-                text: "#สร้างบิล"
+                type: "camera",
+                label: "เพิ่มเติม"
               }
             },
             {
@@ -30,28 +34,8 @@ export default async function reply(replyToken: string, msg: string) {
               imageUrl:
                 "https://res.cloudinary.com/dhr35jlbz/image/upload/v1683195177/line/placarp/images/more-white_vpt5yl.png",
               action: {
-                type: "template",
-                label: "เพิ่มเติม",
-                // text: "#เพิ่มเติม"
-                template: {
-                  type: "image_carousel",
-                  columns: [
-                    {
-                      action: {
-                        type: "uri",
-                        label: "Seefoon",
-                        uri: "https://www.facebook.com/kananart.kuwaranancharoen"
-                      }
-                    },
-                    {
-                      action: {
-                        type: "uri",
-                        label: "Seefoon",
-                        uri: "https://www.facebook.com/kananart.kuwaranancharoen"
-                      }
-                    }
-                  ]
-                }
+                type: "cameraRoll",
+                label: "เพิ่มเติม"
               }
             },
             {
