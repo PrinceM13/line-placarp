@@ -18,7 +18,7 @@ export default async function reply(replyToken: string, msg: string) {
             {
               type: "action",
               imageUrl:
-                "https://res.cloudinary.com/dhr35jlbz/image/upload/v1683191714/line/placarp/images/thai-baht_ix7g3k.png",
+                "https://res.cloudinary.com/dhr35jlbz/image/upload/v1683195177/line/placarp/images/thai-baht-white_ovojzv.png",
               action: {
                 type: "message",
                 label: "สร้างบิล",
@@ -28,7 +28,7 @@ export default async function reply(replyToken: string, msg: string) {
             {
               type: "action",
               imageUrl:
-                "https://res.cloudinary.com/dhr35jlbz/image/upload/v1683191727/line/placarp/images/more_h2rpnp.png",
+                "https://res.cloudinary.com/dhr35jlbz/image/upload/v1683195177/line/placarp/images/more-white_vpt5yl.png",
               action: {
                 type: "message",
                 label: "เพิ่มเติม",
