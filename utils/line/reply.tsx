@@ -34,8 +34,16 @@ export default async function reply(replyToken: string, msg: string) {
               imageUrl:
                 "https://res.cloudinary.com/dhr35jlbz/image/upload/v1683195177/line/placarp/images/more-white_vpt5yl.png",
               action: {
-                type: "cameraRoll",
-                label: "เพิ่มเติม"
+                type: "action",
+                label: "เพิ่มเติม",
+                action: {
+                  type: "postback",
+                  label: "Show Image Carousel",
+                  data: "action=show_image_carousel"
+                }
+
+                // type: "cameraRoll",
+                // label: "เพิ่มเติม"
               }
             },
             {
