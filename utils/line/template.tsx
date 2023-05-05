@@ -29,9 +29,9 @@ export async function ImageCarousel(replyToken: string, action: string) {
               imageUrl:
                 "https://res.cloudinary.com/dhr35jlbz/image/upload/v1683271045/line/placarp/images/OLBKWT0_sma1hb.jpg",
               action: {
-                type: "message",
+                type: "uri",
                 label: "SAKURA",
-                text: "tenderness"
+                uri: "https://edeaf-name-card.vercel.app/name-cards"
               }
             },
             {
