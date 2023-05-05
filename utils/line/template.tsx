@@ -11,10 +11,6 @@ export async function ImageCarousel(replyToken: string, action: string) {
     replyToken,
     messages: [
       {
-        type: "text",
-        text: "Hello, user"
-      },
-      {
         type: "template",
         altText: "this is a image carousel template",
         template: {
@@ -25,8 +21,8 @@ export async function ImageCarousel(replyToken: string, action: string) {
                 "https://res.cloudinary.com/dhr35jlbz/image/upload/v1683271051/line/placarp/images/85294_o02wt2.jpg",
               action: {
                 type: "message",
-                label: "chill",
-                text: "chill with me"
+                label: "CHILL",
+                text: "keep moment"
               }
             },
             {
@@ -34,8 +30,8 @@ export async function ImageCarousel(replyToken: string, action: string) {
                 "https://res.cloudinary.com/dhr35jlbz/image/upload/v1683271045/line/placarp/images/OLBKWT0_sma1hb.jpg",
               action: {
                 type: "message",
-                label: "sakura",
-                text: "falling in love"
+                label: "SAKURA",
+                text: "tenderness"
               }
             },
             {
@@ -43,7 +39,7 @@ export async function ImageCarousel(replyToken: string, action: string) {
                 "https://res.cloudinary.com/dhr35jlbz/image/upload/v1683271044/line/placarp/images/Scene...8_eq5p7w.jpg",
               action: {
                 type: "uri",
-                label: "fuji",
+                label: "FUJI",
                 uri: "https://github.com/PrinceM13"
               }
             }
